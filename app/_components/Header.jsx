@@ -1,6 +1,15 @@
+
+'use client'
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import Link from 'next/link';
+import Image from 'next/image';
+import { LogoutLink, LoginLink } from "@kinde-oss/kinde-auth-nextjs/components";
+import { useKindeBrowserClient } from "@kinde-oss/kinde-auth-nextjs";
+
+
+
+
 
 const Menu = [
     {
@@ -21,10 +30,13 @@ const Menu = [
 ];
 
 function Header() {
+    const { user } = useKindeBrowserClient();
+
     return (
         <header className='grid grid-cols-4 items-center justify-around shadow-sm p-2'>
             <div className='grid grid-cols-2 col-span-3 items-center'>
-                <img src='./logo.svg' alt='logo' width={50} height={50} />
+
+                <Image src='/logo.svg' alt='logo' width={50} height={50} />
 
                 <ul className='sm:grid grid-flow-col justify-between  hidden'>
                     {Menu.map((item, index) => (
@@ -34,7 +46,14 @@ function Header() {
                     ))}
                 </ul>
             </div>
-            <Button variant="outline" className='max-w-20 justify-self-end'>Button</Button>
+            {!user?
+                <LoginLink className='max-w-20 justify-self-end' ><Button variant="outline" >Login</Button></LoginLink>
+                :
+                <LogoutLink className='max-w-20 justify-self-end' ><Button variant="outline" >Logout</Button></LogoutLink>
+
+            }
+
+
         </header>
     );
 }
