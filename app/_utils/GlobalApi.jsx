@@ -23,4 +23,10 @@ function getDoctorsByCategory(category){
     return axiosClient.get(`/doctors?filters[category][Name][$eq]=${category}&populate=*`)
 } 
 
- export {getCategories ,getDoctors ,getDoctorsByCategory};
+
+
+function getDoctorsById  ( doctorId) {
+    return axiosClient.get(`/doctors/${doctorId}?populate=*`);
+        
+};
+ export {getCategories ,getDoctors ,getDoctorsByCategory ,getDoctorsById};

@@ -65,7 +65,7 @@ function CategorySearch() {
           ))
         ) : (
           categories.map((item, index) => (
-            <Link href={`/search/` + item.attributes.Name} key={index} className='bg-blue-50 grid grid-cols-1 gap-2 rounded-lg p-2 hover:scale-110 hover:bg-blue-200 transition-all ease-in-out place-content-center'>
+            <Link href={`/search/` + item.attributes.Name} key={index} className=' shadow-lg border  border-blue-300 grid grid-cols-1 gap-2 rounded-lg p-2 hover:scale-110 hover:bg-blue-200 transition-all ease-in-out place-content-center'>
               <img src={item.attributes.Image.data.attributes.url} alt={item.attributes.Name} className=' h-28 rounded-lg object-cover justify-self-center overflow-hidden' />
               <label className='text-center text-blue-500'>{item.attributes.Name}</label>
             </Link>

@@ -13,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body    >
+      <body    className="bg-yello-50" >
         
-        <div className='md:px-24 px-5 '>
+        <div className='md:px-24 px-5 ' >
           <Header />
           {children}
         </div>

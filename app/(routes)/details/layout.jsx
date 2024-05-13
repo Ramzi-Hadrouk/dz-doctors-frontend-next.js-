@@ -1,10 +1,11 @@
 
-
 export default function DetailsLayout({ children }) {
-  return (
-    <div className="h-screen">
+  
 
-      {children}
-    </div>
+  return (
+ <div className="py-12 ">
+       {children}
+ </div>
+   
   );
 }
