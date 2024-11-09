@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testapis",
+  "info": {
+    "singularName": "testapi",
+    "pluralName": "testapis",
+    "displayName": "testapi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bio": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}
