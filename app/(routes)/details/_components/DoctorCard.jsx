@@ -6,6 +6,7 @@ import Image from 'next/image';
 import React from 'react'
 import { Phone, MapPin, Clock9, HeartPulse } from 'lucide-react';
 import Link from 'next/link';
+import BookAppointment from './BookAppointment';
 
 function DoctorCard({ doctorId }) {
     let [doctor, setDoctor] = useState(null);
@@ -27,7 +28,7 @@ function DoctorCard({ doctorId }) {
         <div>
             {doctor && (
                 <>
-                    <div className='grid   grid-cols-1 md:grid-cols-2  rounded-lg border  place-contnte '>
+                    <div className='grid   grid-cols-1 md:grid-cols-2  rounded-lg border  bg-white place-contnte border-blue-300 shadow-lg  '>
 
                         <img src={doctor.Image.data.attributes.url} className='shadow md:justify-start justify-self-center  h-56 object-cover m-5 rounded-lg bg-white' />
 
@@ -46,18 +47,20 @@ function DoctorCard({ doctorId }) {
                             </h2>
                             <span className='bg-blue-400 md:justify-self-start justify-self-center  rounded-lg  text-white capitalize font-bold   my-6 px-3 shadow-sm w-fit'> <HeartPulse className='inline mx-2' />{doctor.category.data.attributes.Name}</span>
 
-                            <Link href={`/details/${doctor.id}`} className=' md:justify-end   w-fit justify-self-end'>
+                             
 
-                                <Button variant="outline" className='my-9  hover:bg-blue-500 hover:text-white'>
+                                <Button variant="outline" className='my-9   px-0  py-0 h-fit md:justify-self-end justify-self-center   w-fit hover:bg-blue-500 bg-blue-100 text-blue-500 hover:text-white   shadow-gray-500 shadow-md font-bold'>
 
-                                    Book Now
+                                    
+                                    <BookAppointment doctorId={doctorId}/>
                                 </Button>
-                            </Link>
+                          
+                          
                         </div>
 
                     </div>
 
-                    <div className=' rounded-lg border p-4 my-4 text-lg    '>
+                    <div className=' rounded-lg border p-4  bg-white my-4 text-lg border-blue-300 shadow-lg     '>
                         <h1 className='text-2xl font-bold   m-2'> About</h1>
                         {doctor.About[0].children[0].text}
 

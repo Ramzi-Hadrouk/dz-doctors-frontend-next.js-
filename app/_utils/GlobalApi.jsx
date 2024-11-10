@@ -29,4 +29,22 @@ function getDoctorsById  ( doctorId) {
     return axiosClient.get(`/doctors/${doctorId}?populate=*`);
         
 };
- export {getCategories ,getDoctors ,getDoctorsByCategory ,getDoctorsById};
+
+function bookAppointment  ( data) {
+    return axiosClient.post(`/appointments`, data);
+        
+};
+
+
+function sendEmail  ( data) {
+    return axios.post(`/api/sendEmail`, data);
+        
+};
+
+function getBookingList ( userEmail) {
+    return axiosClient.get(`/appointments?filters[Email][$eq]=${userEmail}&populate=*`);
+        
+};
+
+ export {getCategories ,getDoctors ,getDoctorsByCategory ,getDoctorsById ,bookAppointment , sendEmail ,getBookingList};
+    

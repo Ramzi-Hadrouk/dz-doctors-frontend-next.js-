@@ -1,9 +1,12 @@
+'use client'
 import DoctorCard from "../_components/DoctorCard"
 import DoctorsList from "../_components/DoctorsList"
-
+import { useRouter } from 'next/navigation';
 
 
 function Details({ params }) {
+  const router = useRouter();
+
   return (
 
     <div className="h-screen grid grid-cols-4 gap-6">
@@ -17,7 +20,7 @@ function Details({ params }) {
       <div className=" hidden lg:grid">
         
 
-          <DoctorsList/>
+          <DoctorsList router={router}/>
       </div>
 
 

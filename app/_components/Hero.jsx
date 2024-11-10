@@ -15,7 +15,7 @@ function Hero() {
 
 
                     <div className="lg:py-24  md:block grid grid-cols-1 justify-center ">
-                        <h2 className="text-3xl font-bold sm:text-4xl text-center md:text-left">Grow your audience</h2>
+                        <h2 className="text-3xl font-bold sm:text-4xl text-center md:text-left">Dz doctors </h2>
 
                         <p className="mt-4 text-gray-600 text-center md:text-left">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
@@ -30,7 +30,7 @@ function Hero() {
                             Get Started Today
                        </a>*/}
 
-                        <Button variant="outline" className='w-52 min-w-20 mt-1.5 justify-self-center'>Button</Button>
+                        <Button variant="outline" className='w-52 min-w-20 mt-1.5 justify-self-center'>more . . .</Button>
                     </div>
                 </div>
             </div>

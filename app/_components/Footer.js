@@ -2,7 +2,7 @@
 
 function Footer() {
     return (
-        <footer className="bg-blue-200 text-center text-white dark:bg-neutral-600 mt-80  ">
+        <footer className="bg-blue-200 text-center   text-white dark:bg-neutral-600 mt-80  ">
             <div className="container pt-9">
                 <div className="mb-9 flex justify-center">
                   

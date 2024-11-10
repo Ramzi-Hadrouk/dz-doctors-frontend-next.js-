@@ -37,17 +37,17 @@ const Menu = [
 function Header() {
 
     const { user } = useKindeBrowserClient();
-    console.log(user)
+    //console.log(user)
 
     return (
-        <header className='grid grid-cols-4 items-center justify-around shadow-sm p-2'>
+        <header className='grid grid-cols-4 items-center bg-white rounded-lg justify-around shadow-sm p-2 mb-10'>
             <div className='grid grid-cols-2 col-span-3 items-center'>
-
+                <Link href={"/"}>
                 <Image src='/dz_doctors.png' alt='logo' width={80} height={80} />
-
+                </Link>
                 <ul className='sm:grid grid-flow-col justify-between  hidden'>
                     {Menu.map((item, index) => (
-                        <Link href={item.path}>
+                        <Link href={item.path} key={item.id}>
                             <li key={item.id} className='hover:text-blue-500 hover:scale-125 transition-all ease-in-out cursor-pointer'>{item.name}</li>
                         </Link>
                     ))}
@@ -62,7 +62,7 @@ function Header() {
                         <PopoverContent className='w-56 p-2 mt-2  mr-5 md:mr-24'>
                             <ul>
                                 <li className=' hover:bg-blue-200 font-bold p-2 rounded-lg   '>  <Link href={'/'}>Profile</Link></li>
-                                <li className=' hover:bg-blue-200 font-bold p-2 rounded-lg   '>  <Link href={'/'}>My Booking</Link></li>
+                                <li className=' hover:bg-blue-200 font-bold p-2 rounded-lg   '>  <Link href={'/my-booking'}>My Booking</Link></li>
                                 <li className=' hover:bg-blue-200 font-bold p-2 rounded-lg  '> <LogoutLink  > Logout</LogoutLink> </li>
                             </ul>
 

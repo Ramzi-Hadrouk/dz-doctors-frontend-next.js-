@@ -2,6 +2,7 @@
 
 # dependencies
 /backend_doctors-app
+/backend_doctors-app
 /node_modules
 /.pnp
 .pnp.js

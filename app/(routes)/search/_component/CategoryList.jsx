@@ -36,12 +36,12 @@ function CategoryList() {
         []
     );
     return (
-        <div className='h-screen '>
-        <Command className='font-medium  '>
+         
+        <Command className='font-medium bg-white  h-fit pb-80'>
             <CommandInput placeholder="Type a command or search..." />
             <CommandList className='h-fit  overflow-visible' >
                 <CommandEmpty>No results found.</CommandEmpty>
-                <CommandGroup heading="Suggestions" className='h-fit '  >
+                <CommandGroup heading="Suggestions" className=''  >
                     {
                         categories.length === 0 ?
                             (
@@ -68,7 +68,7 @@ function CategoryList() {
 
             </CommandList>
         </Command>
-        </div>
+      
     )
 }
 

@@ -26,8 +26,8 @@ export default function Home() {
       <Hero />
       <CategorySearch />
       {/**doctors section ------------------------------------- */}
-      <h1 className="text-2xl font-bold  text-center">Popular Doctors </h1>
-      <div className='mt-10 mb-10 grid lg:gap-10 gap-2 md:gap-5  grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-center cursor-pointer  '>
+      <h1 className="text-2xl font-bold  text-center my-5">Popular Doctors </h1>
+      <div className='  px-10  '>
         <DoctorLis list={doctors} />
       </div>
     </>
