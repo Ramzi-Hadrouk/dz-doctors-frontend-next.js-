@@ -1,22 +1,27 @@
 # Dz_Doctors Web Application
 
+[![Next.js](https://img.shields.io/badge/Next.js-%23000000.svg?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Strapi](https://img.shields.io/badge/Strapi-%23000000.svg?style=for-the-badge&logo=strapi&logoColor=white)](https://strapi.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-%2318B2E6.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
 This project, Dz_Doctors, was a web application I started working on during my master's preparation period. However, after some reflection, I have decided to discontinue development on this project.
 
 ### Technologies Used:
-- <span style="color:blue;">**Next.js**</span> – For building the React-based frontend.
-- <span style="color:green;">**Strapi**</span> – For managing the backend and content.
-- <span style="color:red;">**KindeAuth**</span> – For handling authentication.
-- <span style="color:purple;">**Tailwind CSS**</span> – For styling, using utility-first classes to create a clean and responsive design.
-- <span style="color:orange;">**Grid Layout**</span> – For creating a responsive layout that adapts seamlessly to different screen sizes.
+- 🚀 **Next.js** – For building the React-based frontend.
+- ⚙️ **Strapi** – For managing the backend and content **check backend branch**.
+- 🔑 **KindeAuth** – For handling authentication.
+- 🎨 **Tailwind CSS** – For styling, using utility-first classes to create a clean and responsive design.
+- 🖥️ **Grid Layout** – For creating a responsive layout that adapts seamlessly to different screen sizes.
 
 ### Features:
 The application allowed users to search for doctors and book appointments. Although I initially made progress, I stopped development due to not adhering to clean code principles, which led to a less maintainable codebase. I’ve chosen not to continue this project, but the experience has provided valuable lessons in improving my development practices.
 
 ### Video Showcase:
-You can view a video showcasing the project [here](https://www.linkedin.com/posts/ramzi-hadrouk-a85973277_this-video-showcases-the-dzdoctors-web-activity-7237922920256188416-uS9z?utm_source=share&utm_medium=member_desktop).
+You can view a video about the project [here](https://www.linkedin.com/posts/ramzi-hadrouk-a85973277_this-video-showcases-the-dzdoctors-web-activity-7237922920256188416-uS9z?utm_source=share&utm_medium=member_desktop).
 
 ### Conclusion:
 This project has been a useful learning experience, but I will not be continuing its development. I am now focusing on improving my coding practices and applying clean code principles in future projects.
+
 
 
 
